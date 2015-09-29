@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas-demo</title>
+    <style>
+    .my-canvas{border: 2px solid #aaa;margin: 0 auto;display: block;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="phoneCanvas" class="my-canvas">
+            您的浏览器不支持canvas，请升级您的浏览器
+        </canvas>
+    </div>
+    <script src="requestAnimationFrame.js"></script>
+    <script src="bubbles.js"></script>
+    <script>
+        var canvasPanel = new BubblesPanel({
+            canvasElement: '.my-canvas',
+            bubblesCount: 30,
+            width: 1240,
+            height: 800
+        });
+    </script>
+</body>
+</html>
