@@ -82,8 +82,7 @@
         },
 
         initBubbles: function() {
-            // 计算小球数量
-            // 动态添加
+            // 初始化小球
             for (var i = 0; i < this.options.bubblesCount; i++) {
                 var x, y, vx, vy;
                 y = RND() * (canvas.height - 2 * RADIUS);
